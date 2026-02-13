@@ -7,12 +7,11 @@ public class App
 {
     public static void main( String[] args )
     {
-    	ApplicationContext ac =new ClassPathXmlApplicationContext("com/sp/hello.xml");
-
-    	Student so1 = (Student) ac.getBean("s1");
-        Student so2 = (Student) ac.getBean("s2");
+    	ApplicationContext ac =new ClassPathXmlApplicationContext("com/sp/hello1.xml");
+    	Student1 so1 = (Student1) ac.getBean("s1");
+        // Student so2 = (Student) ac.getBean("s2");
     	System.out.println(so1);
-        System.out.println(so2);
+        // System.out.println(so2);
 
     }
 }
