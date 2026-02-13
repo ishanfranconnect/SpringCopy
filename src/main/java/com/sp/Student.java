@@ -3,20 +3,21 @@ package com.sp;
 public class Student {
 	private int roll;
 	private String name;
-	private String city;
+	private Address a;
+	// private String city;
 	
 	public Student() {
 		super();
 	}
-	public Student(int roll,String name,String city) {
+	public Student(int roll,String name,Address a) {
 		super();
 		this.roll=roll;
 		this.name=name;
-		this.city=city;
+		this.a=a;
 	}
 	@Override
 	public String toString() {
-		return "Student [roll=" + roll + ", name=" + name + ", city=" + city + "]";
+		return "Student [roll=" + roll + ", name=" + name + ",a="+a+"]";
 	}
 	
 	public void setRoll(int roll) {
@@ -31,11 +32,11 @@ public class Student {
 	public String getName() {
 		return name;
 	}
-	public void setCity(String city) {
-		this.city=city;
+	public Address getA(){
+		return a;
 	}
-	public String getCity() {
-		return city;
+	public void setA(Address a){
+		this.a=a;
 	}
 	
 	
